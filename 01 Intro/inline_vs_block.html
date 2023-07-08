@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block</title>
+    <style>
+        /* CSS Priority: 
+            !    tag selector
+            !!   class selector
+            !!!  id selector
+            !!!! style attribute
+        */
+
+        p {
+            background-color: lightgrey;
+        }
+
+        span {
+            background-color: darkgray;
+            width: 100px;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        p.inline-block-items span {
+            /* change type */
+            display: inline-block;
+        }
+
+        blockquote {
+            background-color: lightgray;
+            width: 250px;
+            padding: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inline and Block Elements</h1>
+    <p>
+        <strong>Inline elements:</strong>
+        <span>Hello</span>
+        <span>how</span>
+        <span>are</span>
+        <span>you?</span>
+    </p>
+    <p class="inline-block-items">
+        <strong>Inline-block elements:</strong>
+        <span>Hello</span>
+        <span>how</span>
+        <span>are</span>
+        <span>you?</span>
+    </p>
+
+    <h2>Block Elements</h2>
+
+    <blockquote>Hi!</blockquote>
+    <blockquote>Hey!</blockquote>
+    <blockquote>Hello!</blockquote>
+
+    <h3><strong>Address</strong></h3>
+    <address>Rivne, Ukraine</address>
+
+    <div>
+        <img width="300"
+            src="https://media.gcflearnfree.org/content/5e82363212da9215e057b928_03_30_2020/block_vs_inline_diagram.png"
+            alt="">
+    </div>
+    <div>
+        <img width="300"
+            src="https://media.gcflearnfree.org/content/5e82363212da9215e057b928_03_30_2020/block_vs_inline_diagram.png"
+            alt="">
+    </div>
+</body>
+
+</html>
