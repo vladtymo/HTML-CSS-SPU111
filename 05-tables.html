@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 80%;
+            min-width: 650px;
+            max-width: 800px;
+
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+            color: white;
+        }
+
+        caption {
+            text-transform: uppercase;
+            text-align: right;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            padding: 16px;
+        }
+
+        th {
+            text-transform: uppercase;
+        }
+
+        thead {
+            border-bottom: 1px solid white;
+        }
+
+        tfoot {
+            border-top: 1px solid white;
+        }
+
+        /* set white circle */
+        tbody td span {
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            font-weight: bold;
+            line-height: 25px;
+            font-size: larger;
+        }
+
+        /* styling first column */
+        tr td:first-child,
+        tr th:first-child {
+            color: #666666;
+        }
+
+        tr td:first-child {
+            text-align: left;
+            padding-left: 11px;
+        }
+
+        /* column background color */
+        .col-1 {
+            background-color: #dddddd;
+            width: auto;
+        }
+
+        .col-2 {
+            background-color: #17d0d3;
+            width: 17%;
+        }
+
+        .col-3 {
+            background-color: #8ac149;
+            width: 17%;
+        }
+
+        .col-4 {
+            background-color: #feca28;
+            width: 17%;
+        }
+
+        .col-5 {
+            background-color: #f44236;
+            width: 17%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Title Table</caption>
+        <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+            <col class="col-5">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Specification</th>
+                <th>Free</th>
+                <th>Basic</th>
+                <th>Standart</th>
+                <th>Premium</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th>Price</th>
+                <th>$ 0.00</th>
+                <th>$ 9.99</th>
+                <th>$ 19.99</th>
+                <th>$ 29.99</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum dolor</td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Repudiandae, illo</td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Nam, qui magnam</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Deleniti, blanditiis</td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Nisi, labore odit</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Harum, obcaecati</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
