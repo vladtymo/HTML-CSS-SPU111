@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form {
+            padding: 20px;
+            border: 1px solid gray;
+            margin-top: 10px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .stretch-last {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .stretch-last :last-child {
+            flex-grow: 1;
+        }
+        .aling-center {
+            display: flex;
+            align-items: center;
+        }
+
+        input:last-child {
+            outline: none;
+        }
+
+        input.styled {
+            outline: none;
+            border: none;
+            box-shadow: 1px 1px 4px black;
+            padding: 10px;
+        }
+
+        button.styled {
+            background-color: darkgrey;
+            padding: 10px;
+            color: white;
+            border: none;
+        }
+        button.styled:hover {
+            background-color: rgb(119, 119, 119);
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h2>Order form</h2>
+        <div class="stretch-last">
+            <label for="nameIn" accesskey="n"><u>N</u>ame:</label>
+            <input id="nameIn" type="text" placeholder="Enter your name">
+        </div>
+        <div class="stretch-last">
+            <label>Email address:</label>
+            <input type="email" placeholder="Enter email address"/>
+        </div>
+        <div>
+            <label class="aling-center">
+                <span>Check me</span>
+                <input type="checkbox">
+            </label>
+        </div>
+        <input type="color" name="" id="">
+        <input type="date" name="" id="">
+        <input type="file" name="" id="">
+        <input type="month" name="" id="">
+        <label>Price:</label>
+        <input type="number" min="100" max="1000" step="50">
+        <input type="range" name="" id="">
+        <input type="time" name="" id="">
+        <input class="styled" type="url" name="" id="">
+
+        <button class="styled" type="reset">Reset</button>
+        <button type="submit">Accept</button>
+    </form>
+
+    <script>
+        const submitBtn = document.querySelector('form *[type="submit"]');
+
+        submitBtn.onclick = (event) => {
+            event.preventDefault();
+
+            console.log("Clicked!");
+        }
+    </script>
+</body>
+</html>
